@@ -5,11 +5,7 @@ import SiteLayout from "../components/global/layout";
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
-  return (
-    <>
-      <SiteLayout />
-    </>
-  );
+  return <SiteLayout />;
 };
 
 export default Home;

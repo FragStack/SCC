@@ -1,7 +1,7 @@
-import { Flex, VStack } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 import React, { ReactNode } from "react";
-import GuildUpdates from "../../guildUpdates";
 import Header from "../header";
+import MainSwitch from "../MainSwitch";
 
 type SiteLayoutProps = {
   children?: ReactNode;
@@ -9,14 +9,10 @@ type SiteLayoutProps = {
 
 const SiteLayout = ({ children }: SiteLayoutProps) => {
   return (
-    <>
+    <Flex w="100%" minH="120vh" direction="column" align="center">
       <Header title="Smart Contract CDN Demo" />
-      //temp flex where the tech overview will go
-      <Flex as="section" w="100%" minH="40vh" bg="grey">
-        Tech description here
-      </Flex>
-      <GuildUpdates />
-    </>
+      <MainSwitch />
+    </Flex>
   );
 };
 
