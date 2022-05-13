@@ -9,7 +9,15 @@ type SiteLayoutProps = {
 
 const SiteLayout = ({ children }: SiteLayoutProps) => {
   return (
-    <Flex w="100%" minH="120vh" direction="column" align="center">
+    <Flex
+      direction="column"
+      align="center"
+      minH={"100vh"}
+      bgImage="url('/space.jpg')"
+      bgSize="cover"
+      bgAttachment="fixed"
+      // bgAttachment="fixed"
+    >
       <Header title="Smart Contract CDN Demo" />
       <MainSwitch />
     </Flex>

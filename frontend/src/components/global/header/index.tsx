@@ -10,12 +10,10 @@ const Header = ({ children, title }: HeaderProps) => {
   return (
     <Flex
       as="nav"
-      //temp
-      bg="navy"
+      bg="transparent"
       align="center"
       justify="space-between"
       wrap="wrap"
-      w="100%"
       p={8}
     >
       <Heading>{title}</Heading>
